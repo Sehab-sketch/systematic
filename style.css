@@ -1,0 +1,279 @@
+/*----------------------------------
+           common Css
+------------------------------------*/
+body{
+    color: #878787;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*----------------------------------
+           Top Header
+------------------------------------*/
+
+.header-area{
+    width: 100%;
+    clear: both;
+}
+
+#top-header{
+    background-color: #ba2e1f;  
+    width: 100%;
+    padding: 13px 0;
+}
+
+.inner-top-header{
+    overflow: hidden;
+
+}
+
+.mini-menu{
+    width: 70%;
+    float: left;
+}
+
+.mini-menu ul{
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    color: wheat;
+    text-align: left;
+    
+
+} 
+
+.mini-menu li{
+    display: inline-block ;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+} 
+.mini-menu li:hover{
+    color: blue;
+    font-size: 18px;
+}
+
+
+.mini-menu ul li::after{
+    background-color: aliceblue;
+    content: "";
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 8px;
+    right: -5px;
+    
+}
+
+.mini-menu ul li:last-child::after{
+    display: none;
+}
+
+.src-box{
+    width: 30%;
+    float: right;
+}
+
+.src-box form{
+    background-color: white;
+    border-radius: 20px;
+    max-width: 210px;
+    width: 96%;
+    float: right;
+    padding: 2%;
+}
+
+.src-box input{
+    border: 0px solid;
+    width: 70%;
+    padding: 1%;
+    float: left;
+    color: black;
+}
+
+.src-box input[type="submit"]{
+    background: url(/img/src.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 23%;
+    cursor: pointer;
+    
+}
+
+/*----------------------------------
+          Main Header
+------------------------------------*/
+
+.main-header-container{
+    max-width: 960px;
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px ;
+}
+
+.logo_area{
+    width: 70%;
+    overflow: hidden;
+}
+
+.social_area{
+    width: 30%;
+}
+
+.social_area ul{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.social_area ul li{
+    list-style: none;
+    margin-left: 20px;   
+}
+
+.social_area ul li a{
+    text-decoration: none;
+    display: block;
+    padding-top: 1px;
+    justify-content: end;
+
+}
+
+.social_area ul li a i{
+    width: 35px;
+    height: 25px;
+    padding-top: 7px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.social_area ul li a i:hover{
+    background-color: blue;
+}
+
+
+/*----------------------------------
+             Nav Menu
+------------------------------------*/
+
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+
+.inner_menu{
+    
+
+}
+
+.nav_container{
+    max-width: 960px;
+    width: 96%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 10px 0;
+    
+}
+
+.nav_container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_container ul li{
+    margin: 0 10px;
+    position: relative;
+
+}
+
+.nav_container ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+
+
+}
+
+.nav_container ul li a:hover{
+    color: red;
+}
+
+.nav_container ul li:hover a{
+    color:red;
+}
+
+.nav_container ul li:hover ul li a{
+    color: white;
+}
+
+.nav_container ul ul{
+    position: absolute;
+    background-color: red;
+    width: 180px;
+    left: -9999999px;
+    top: 30px;
+    display: inline-block;
+
+}
+
+.nav_container ul li:hover ul{
+    left: 0;
+}
+
+.nav_container ul li:hover ul ul{
+    left: -99999px;
+}
+
+.nav_container ul li  ul li:hover ul{
+    left: 180px;
+}
+
+
+.nav_container ul ul li{
+    margin: 0;
+    display: block;
+}
+
+.nav_container ul ul li:hover a{
+    background-color: black;
+}
+
+
+.nav_container ul ul li:hover ul li a{
+    background: none;
+}
+
+.nav_container ul ul li ul li a:hover{
+    background-color: black;
+}
+
+.nav_container ul ul ul{
+    
+    left: 180px;
+    top: 00px;
+    
+
+}
