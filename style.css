@@ -216,6 +216,7 @@ img{
 
 .nav_container ul li a:hover{
     color: red;
+    z-index: 1;
 }
 
 .nav_container ul li:hover a{
@@ -278,8 +279,14 @@ img{
     margin: 0 auto;
     max-width: 960px;
     width: 96%;
+    
 }
 
-.item{
-    display: none;
+
+.nav_container ul:hover li{
+    z-index: 1;
+}
+
+.nav_container ul:hover slider_container{
+    z-index: -2;
 }
