@@ -1,9 +1,9 @@
-@media screen and (min-width: 200px) and (max-width: 360px)  {
+@media screen and (min-width: 200px) and (max-width: 991px)  {
 
 
     .mini-menu {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: auto;
         display: flex;
         font-size: 15px;
     }
@@ -15,14 +15,35 @@
         font-size: 15px;
     }
 
-    src-box {
-        width: 50%;
-        display: inline-block;
-        padding-left: 80px;
+    .mini-menu ul {
+        width: 100%;
     }
 
+    .mini-menu li {  
+        margin: 0% 8%;
+    }
+
+    .mini-menu ul li::after{
+        display: none;
+    }
+
+    .src-box {
+        width: 100%;
+        padding-right: 11.2%;
+    }
+
+    .src-box form {
+        background-color: white;
+        border-radius: 20px;
+        width: 50%;
+        float: right;
+        padding: 1%;
+        margin-right: 29%;
+    }
+
+
+
     .main-header-container {
-        max-width: 360px;
         width: 96%;
         margin: 0 auto;
         display: flex;
@@ -31,14 +52,19 @@
     }
 
     .logo_area {
-        max-width: 360px;
         width: 100%;
         overflow: hidden;
-        margin: 0px 0px;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
+
 
     .logo_area a{
         padding: 0px 5px;
+    }
+
+    .logo_area img {
+        margin: 0% 34%;
     }
 
     .social_area ul {
@@ -70,6 +96,12 @@
         text-align: center;
         display: flex;
         justify-content: normal;
+    }
+
+
+    .nav_container ul li {
+        margin: 0 3.3%;
+        position: relative;
     }
 
     .nav_container ul li a {
@@ -113,11 +145,14 @@
         margin: 1% 0%;
     }
 
-    .slider_container{
-        max-width: 360px;
-        width: 100%
+    .slider_container {
+        width: 100%;
     }
 
+    .slider_containe img{
+        width: 100%;
+        height: auto;
+    }
 
 
 
