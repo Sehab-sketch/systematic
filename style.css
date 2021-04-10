@@ -257,6 +257,7 @@ img{
 
 .nav_container ul ul li:hover a{
     background-color: black;
+    
 }
 
 .nav_container ul ul li:hover ul li a{
@@ -264,14 +265,17 @@ img{
 }
 
 .nav_container ul ul li ul li a:hover{
-    background-color: black;
+    background-color:red;
 }
-
-.nav_container ul ul ul{
-    
+ .nav_container ul li ul li ul li a:hover{
+     background-color: black;
+     color: white;
+ }
+.nav_container ul ul ul{ 
     left: 180px;
     top: 00px;
 }
+
 
 
 
@@ -385,8 +389,6 @@ img{
     margin-right: 0;
     margin-left: 1.5%;
 }
-
-
 
 .child_clients_reviews{
     padding: 1%  0%;

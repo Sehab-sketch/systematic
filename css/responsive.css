@@ -13,14 +13,21 @@
         margin-bottom: 10px;
         display: flex;
         font-size: 15px;
+        
     }
 
     .mini-menu ul {
         width: 100%;
     }
 
-    .mini-menu li {  
-        margin: 0% 8%;
+    .mini-menu li {
+        width: 24%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .mini-menu li:hover{
+        font-size: 15px;
     }
 
     .mini-menu ul li::after{
@@ -90,28 +97,35 @@
 
 
     .nav_container ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        display: flex;
-        justify-content: normal;
+        
+        display: inline-block;
+        
     }
 
+    
+    .nav_container ul li:hover ul ul{
+        left: 0;
+    }
 
-    .nav_container ul li {
-        margin: 0 3.3%;
+    .nav_container ul:hover li{
+        padding-bottom: 20px;
+    }
+
+    .nav_container ul ul{
         position: relative;
+        margin: 0%;
+        padding: 0%;
     }
 
-    .nav_container ul li a {
+    .nav_container ul ul li{
+        background-color: black;
         color: white;
-        text-decoration: none;
-        display: block;
-        padding: 3px;
-        font-size: 12px;
+        
     }
 
+    
+    
+    
     #work_area {
         padding: 0px 0px;
     }
@@ -153,18 +167,6 @@
         width: 100%;
         height: auto;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
